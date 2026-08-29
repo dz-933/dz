@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年度顺德区青少年科技类社会实践活动实施细则</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0e8;
+    --paper: #fffdf8;
+    --border: #c8b898;
+    --accent: #b22222;
+    --accent-light: #d4444420;
+    --text: #2c2418;
+    --text-muted: #7a6e5d;
+    --shadow: rgba(80, 60, 30, 0.08);
+    --divider: #e0d5c3;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.9;
+    font-size: 15.5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 80px;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 253, 248, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--divider);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    animation: slideDown 0.4s ease;
+  }
+
+  @keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+
+  .toolbar button {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border);
+    background: var(--paper);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .toolbar button:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(178, 34, 34, 0.25);
+  }
+
+  .toolbar button .icon { font-size: 15px; }
+
+  .document {
+    max-width: 780px;
+    width: 100%;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 60px 64px;
+    margin-top: 70px;
+    position: relative;
+    box-shadow: 0 2px 30px var(--shadow), 0 0 0 1px rgba(200, 184, 152, 0.3);
+    animation: fadeUp 0.6s ease;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Decorative top edge */
+  .document::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), #d4a853, var(--accent));
+  }
+
+  /* Header stamp area */
+  .doc-header {
+    text-align: center;
+    margin-bottom: 36px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid var(--accent);
+    position: relative;
+  }
+
+  .doc-header::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background: var(--divider);
+  }
+
+  .org-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+  }
+
+  .doc-number {
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .doc-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px 0 28px;
+    line-height: 1.5;
+    color: var(--text);
+    letter-spacing: 1px;
+  }
+
+  .doc-subtitle {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--text);
+    letter-spacing: 2px;
+  }
+
+  .preamble {
+    margin-bottom: 28px;
+    text-indent: 2em;
+    color: #3d3425;
+  }
+
+  .receiver {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .issuing-block {
+    text-align: right;
+    margin: 24px 0 40px;
+    line-height: 2.2;
+    color: var(--text);
+  }
+
+  .issuing-block .org { font-weight: 600; }
+
+  /* Sections */
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: var(--divider);
+    margin: 36px 0;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 28px 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    line-height: 1.6;
+  }
+
+  .section-title:first-of-type { margin-top: 0; }
+
+  .section-body {
+    padding-left: 4px;
+  }
+
+  .section-body p {
+    text-indent: 2em;
+    margin-bottom: 8px;
+  }
+
+  .section-body p.no-indent {
+    text-indent: 0;
+  }
+
+  .section-body ul {
+    list-style: none;
+    padding-left: 2em;
+    margin-bottom: 10px;
+  }
+
+  .section-body ul li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 16px;
+  }
+
+  .section-body ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  .sub-item {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+
+  .highlight {
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
+  .note-box {
+    background: #faf6ee;
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: 14px;
+    color: #5a4e3a;
+  }
+
+  .note-box::before {
+    content: '注：';
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .contact-item {
+    flex: 1;
+    min-width: 220px;
+    background: #faf6ee;
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+    padding: 14px 18px;
+  }
+
+  .contact-item .dept {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .contact-item .name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .contact-item .phone {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .page-hint {
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* Print */
+  @media print {
+    .toolbar { display: none; }
+    body { background: #fff; padding: 0; }
+    .document { box-shadow: none; border: none; margin: 0; max-width: 100%; padding: 40px; }
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .document { padding: 32px 24px; }
+    .doc-title { font-size: 19px; }
+    .doc-subtitle { font-size: 17px; }
+    .toolbar { padding: 10px 12px; }
+    .toolbar button { font-size: 12px; padding: 6px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button onclick="window.print()"><span class="icon">🖨</span> 打印 / 导出 PDF</button>
+  <button onclick="downloadHTML()"><span class="icon">⬇</span> 下载 HTML 文件</button>
+</div>
+
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org-name">佛山市顺德区青少年成长促进会</div>
+    <div class="doc-number">区青促〔2026〕16 号</div>
+  </div>
+
+  <div class="doc-title">关于印发《2026年度顺德区青少年<br>科技类社会实践活动实施细则》的通知</div>
+
+  <div class="receiver">各会员单位：</div>
+
+  <div class="preamble">
+    为深入贯彻《深化新时代教育评价改革总体方案》《全民科学素质行动计划纲要（2021—2035年）》精神，规范开展2026年顺德区青少年科技类社会实践活动，确保活动安全、公平、有序实施，现将《2026年度顺德区青少年科技类社会实践活动实施细则》印发给你们，请认真组织落实。
+  </div>
+
+  <div class="issuing-block">
+    <div class="org">佛山市顺德区青少年成长促进会</div>
+    <div>2026年7月18日</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="doc-subtitle">2026年度顺德区青少年科技类社会实践活动实施细则</div>
+
+  <!-- 一、活动宗旨 -->
+  <div class="section-title">一、活动宗旨</div>
+  <div class="section-body">
+    <p>全面落实立德树人根本任务，提升青少年科学素养、创新精神与实践能力，普及人工智能教育，营造爱科学、学科学、用科学的良好社会氛围，促进青少年全面发展。</p>
+  </div>
+
+  <!-- 二、组织单位 -->
+  <div class="section-title">二、组织单位</div>
+  <div class="section-body">
+    <p class="no-indent"><strong>主办单位：</strong>佛山市顺德区青少年成长促进会</p>
+    <p class="no-indent"><strong>支持单位：</strong></p>
+    <ul>
+      <li>佛山光小猿教育科技有限公司</li>
+      <li>语联八方（佛山）信息技术咨询有限公司</li>
+      <li>佛山市顺德区陈村镇虹猫科技培训有限公司</li>
+      <li>佛山市顺德区大良街道博创童偲科技培训有限公司</li>
+      <li>佛山市顺德区北滘镇智学科技培训有限公司</li>
+      <li>佛山市八方航聚低空经济有限公司</li>
+    </ul>
+  </div>
+
+  <!-- 三、参与对象 -->
+  <div class="section-title">三、参与对象</div>
+  <div class="section-body">
+    <p>顺德区内4—18周岁青少年儿童（含学龄前、小学、初中、高中、中职学生）；欢迎全省各地幼儿园、中小学校、校外教育机构集体组织参与。</p>
+  </div>
+
+  <!-- 四、活动时间 -->
+  <div class="section-title">四、活动时间</div>
+  <div class="section-body">
+    <p><strong>2026年8月29日（星期六）8:30 — 16:00</strong></p>
+  </div>
+
+  <!-- 五、活动地点 -->
+  <div class="section-title">五、活动地点</div>
+  <div class="section-body">
+    <p><strong>佛山顺德文德学校</strong></p>
+  </div>
+
+  <!-- 六、报名方式 -->
+  <div class="section-title">六、报名方式</div>
+  <div class="section-body">
+    <p>通过官方指定微信小程序报名：</p>
+    <p class="no-indent" style="text-align:center;margin:14px 0;">
+      <span style="display:inline-block;background:var(--accent);color:#fff;padding:6px 20px;border-radius:4px;font-weight:600;font-size:14px;letter-spacing:1px;">小程序：德心青少年成长服务中心</span>
+    </p>
+  </div>
+
+  <!-- 七、活动内容 -->
+  <div class="section-title">七、活动内容</div>
+  <div class="section-body">
+
+    <p class="no-indent" style="margin-top:8px;"><span class="category-tag">创意类</span>（规则见附件）</p>
+    <ul>
+      <li><span class="sub-item">AIGC 数智艺术创作</span><br>比赛分为小学、初中、高中三个组别，分为线上选拔和线下演讲两个环节，作品内容为AIGC视频作品。</li>
+      <li><span class="sub-item">创新发明类</span><br>比赛分为小学、初中、高中三个组别，先进行线上作品评选，比赛当日进行现场作品答辩。</li>
+    </ul>
+
+    <p class="no-indent"><span class="category-tag">编程类</span>（规则见附件）</p>
+    <ul>
+      <li>适合6—18岁青少年参与，分为 <strong>Scratch（图形化编程）</strong>、<strong>Python</strong>、<strong>GOC</strong>、<strong>C++</strong> 四个组别，可自主选报1—2个组别参与。</li>
+      <li>各选手须自带电脑和电源排插，预装好活动所需的相关软件及插件等。</li>
+    </ul>
+
+    <p class="no-indent"><span class="category-tag">任务类</span>（规则见附件）</p>
+    <ul>
+      <li><span class="sub-item">积木类：</span>太空之旅—星际穿越（幼儿中班、大班，小学一年级）</li>
+      <li><span class="sub-item">Arduino 硬件编程</span>（小学组、中学组）</li>
+      <li><span class="sub-item">机器人类：</span>具身智能机器人（小学低年级组、小学高年级组、中学组）</li>
+      <li><span class="sub-item">AI 智能体硬件挑战赛</span>（小学组、中学组）</li>
+      <li><span class="sub-item">无人机操控类：</span>无人机竞速障碍赛（小学组、中学组）、无人机投篮赛（小学组、中学组）</li>
+    </ul>
+
+    <div class="note-box">所有选手本人仅能参与所在学段的组别活动，不允许跨组别参加。</div>
+  </div>
+
+  <!-- 八、奖项设置 -->
+  <div class="section-title">八、奖项设置</div>
+  <div class="section-body">
+    <p>活动各项目设置 <span class="highlight">一等奖（15%）</span>、<span class="highlight">二等奖（35%）</span>、<span class="highlight">三等奖（50%）</span> 三个级别，获奖选手颁发<strong>综合能力证书</strong>。</p>
+  </div>
+
+  <!-- 九、证书颁发 -->
+  <div class="section-title">九、证书颁发</div>
+  <div class="section-body">
+    <p>活动为完成实践项目的青少年颁发<strong>社会实践证书</strong>、<strong>综合能力证书</strong>，作为综合素质评价与实践经历依据。</p>
+  </div>
+
+  <!-- 十、联系方式 -->
+  <div class="section-title">十、联系方式</div>
+  <div class="section-body">
+    <div class="contact-card">
+      <div class="contact-item">
+        <div class="dept">项目发展部</div>
+        <div class="name">梁老师</div>
+        <div class="phone">13902564933（微信同号）</div>
+      </div>
+      <div class="contact-item">
+        <div class="dept">科技创新服务部</div>
+        <div class="name">罗老师</div>
+        <div class="phone">13670201256（微信同号）</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+  <div class="page-hint">— 本文件共4页 · 佛山市顺德区青少年成长促进会 · 2026年7月18日印发 —</div>
+
+</div>
+
+<script>
+function downloadHTML() {
+  const html = document.documentElement.outerHTML;
+  const blob = new Blob(['<!DOCTYPE html>\n' + html], { type: 'text/html;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = '2026年度顺德区青少年科技类社会实践活动实施细则.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body></html>
