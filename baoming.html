@@ -3,222 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>获奖证书查询下载</title>
+<title>2026顺德区青少年科技实践活动 — 报名入口</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg-deep:#060b14;
-  --surface:rgba(15,30,55,0.7);
-  --accent:#00d4ff;
-  --accent-secondary:#7b61ff;
-  --accent-gold:#f0c040;
-  --success:#00e68a;
-  --error:#ff4d6a;
-  --text-primary:#e8edf5;
-  --text-secondary:#8a9bb5;
-  --text-muted:#506080;
-  --border:rgba(0,212,255,0.12);
-  --border-strong:rgba(0,212,255,0.3);
-  --radius:12px;
-  --input-bg:rgba(8,18,36,0.8);
-  --input-border:rgba(0,212,255,0.15);
-  --input-focus:rgba(0,212,255,0.4);
-}
+:root{--bg-deep:#060b14;--surface:rgba(15,30,55,0.7);--accent:#00d4ff;--accent-secondary:#7b61ff;--accent-gold:#f0c040;--success:#00e68a;--error:#ff4d6a;--text-primary:#e8edf5;--text-secondary:#8a9bb5;--text-muted:#506080;--border:rgba(0,212,255,0.12);--border-strong:rgba(0,212,255,0.3);--radius:12px}
 html{scroll-behavior:smooth;font-size:16px}
-body{
-  font-family:'Noto Sans SC',system-ui,-apple-system,sans-serif;
-  background:var(--bg-deep);color:var(--text-primary);
-  line-height:1.7;overflow-x:hidden;min-height:100vh;
-}
-body::before{
-  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:
-    radial-gradient(ellipse 80% 60% at 20% 10%,rgba(0,60,140,0.25) 0%,transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 80%,rgba(60,20,120,0.15) 0%,transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 50%,rgba(0,100,160,0.08) 0%,transparent 70%),
-    linear-gradient(170deg,#060b14 0%,#0c1a2e 35%,#132744 65%,#1a3050 100%);
-}
-body::after{
-  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity:0.5;
-}
-.grid-bg{
-  position:fixed;inset:0;z-index:0;pointer-events:none;
-  background-image:
-    linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px);
-  background-size:60px 60px;
-}
-.scanlines{
-  position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);
-}
-.container{
-  position:relative;z-index:1;
-  max-width:700px;margin:0 auto;padding:40px 24px 80px;
-}
-.hero{text-align:center;padding:60px 0 40px;position:relative}
-.hero::before{
-  content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:400px;height:400px;border-radius:50%;
-  background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);
-  pointer-events:none;
-}
-.badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(0,212,255,0.08);border:1px solid var(--border-strong);
-  border-radius:40px;padding:6px 20px;font-size:13px;letter-spacing:2px;
-  color:var(--accent);font-weight:500;font-family:'JetBrains Mono',monospace;
-  animation:fadeDown 0.6s ease both;
-}
+body{font-family:'Noto Sans SC',system-ui,-apple-system,sans-serif;background:var(--bg-deep);color:var(--text-primary);line-height:1.7;overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(0,60,140,0.25) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 80% 80%,rgba(60,20,120,0.15) 0%,transparent 55%),linear-gradient(170deg,#060b14 0%,#0c1a2e 35%,#132744 65%,#1a3050 100%)}
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:0.5}
+.grid-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px);background-size:60px 60px}
+.scanlines{position:fixed;inset:0;z-index:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px)}
+.container{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:40px 24px 80px}
+.hero{text-align:center;padding:70px 0 20px;position:relative}
+.hero::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.08);border:1px solid var(--border-strong);border-radius:40px;padding:6px 20px;font-size:13px;letter-spacing:2px;color:var(--accent);font-weight:500;font-family:'JetBrains Mono',monospace;animation:fadeDown 0.6s ease both}
 .badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s ease infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
-.hero h1{
-  font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:900;
-  margin:20px 0 14px;line-height:1.3;
-  background:linear-gradient(135deg,#ffffff 0%,#f0c040 60%,#ff9f43 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  animation:fadeDown 0.7s ease 0.1s both;
-}
-.hero .subtitle{
-  font-size:1rem;color:var(--text-secondary);font-weight:300;
-  animation:fadeDown 0.7s ease 0.2s both;
-}
+.hero h1{font-size:clamp(1.6rem,4.5vw,2.8rem);font-weight:900;margin:20px 0 14px;line-height:1.3;background:linear-gradient(135deg,#ffffff 0%,#00d4ff 50%,#7b61ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeDown 0.7s ease 0.1s both}
+.hero .subtitle{font-size:1.05rem;color:var(--text-secondary);font-weight:300;max-width:520px;margin:0 auto;animation:fadeDown 0.7s ease 0.2s both}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.search-card{
-  background:var(--surface);backdrop-filter:blur(20px);
-  border:1px solid var(--border);border-radius:var(--radius);
-  padding:36px;position:relative;overflow:hidden;
-  animation:fadeUp 0.6s ease 0.2s both;
-}
-.search-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,var(--accent-gold),transparent);
-}
-.search-card h2{
-  font-size:1.1rem;font-weight:700;color:var(--text-primary);
-  margin-bottom:24px;display:flex;align-items:center;gap:10px;
-}
-.field{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
-.field label{
-  font-size:13px;font-weight:500;color:var(--text-secondary);
-  letter-spacing:0.5px;display:flex;align-items:center;gap:6px;
-}
-.field label .required{color:var(--error);font-size:14px}
-.field input{
-  width:100%;padding:14px 18px;font-size:15px;
-  font-family:'Noto Sans SC',sans-serif;
-  color:var(--text-primary);background:var(--input-bg);
-  border:1px solid var(--input-border);border-radius:10px;
-  outline:none;transition:all 0.25s ease;
-}
-.field input::placeholder{color:var(--text-muted);font-size:14px}
-.field input:focus{
-  border-color:var(--input-focus);
-  box-shadow:0 0 0 3px rgba(0,212,255,0.08);
-  background:rgba(10,22,44,0.9);
-}
-.btn-search{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  width:100%;padding:16px;font-size:16px;font-weight:700;
-  color:var(--bg-deep);background:linear-gradient(135deg,var(--accent-gold),#f5d76e);
-  border:none;border-radius:12px;cursor:pointer;
-  letter-spacing:3px;
-  transition:all 0.35s ease;position:relative;overflow:hidden;
-  box-shadow:0 4px 24px rgba(240,192,64,0.2);
-  margin-top:4px;
-}
-.btn-search::before{
-  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
-  transition:left 0.5s ease;
-}
-.btn-search:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(240,192,64,0.3)}
-.btn-search:hover::before{left:100%}
-.btn-search:disabled{opacity:0.5;cursor:not-allowed;transform:none}
-.btn-search .loading-spinner{
-  display:inline-block;width:18px;height:18px;
-  border:2px solid rgba(0,0,0,0.2);border-top-color:var(--bg-deep);
-  border-radius:50%;animation:spin 0.6s linear infinite;
-}
-@keyframes spin{to{transform:rotate(360deg)}}
-.result-area{margin-top:32px;display:none}
-.result-area.show{display:block;animation:fadeUp 0.5s ease both}
-.result-card{
-  background:var(--surface);backdrop-filter:blur(20px);
-  border:1px solid var(--border);border-radius:var(--radius);
-  padding:28px;text-align:center;position:relative;overflow:hidden;
-}
-.result-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,var(--success),transparent);
-}
-.result-name{font-size:1.1rem;font-weight:700;color:var(--text-primary);margin-bottom:4px}
-.result-info{
-  font-size:13px;color:var(--text-muted);
-  font-family:'JetBrains Mono',monospace;letter-spacing:1px;
-  margin-bottom:24px;
-}
-.cert-preview{
-  display:inline-block;padding:12px;
-  background:rgba(255,255,255,0.03);
-  border:2px dashed rgba(0,212,255,0.15);
-  border-radius:14px;margin-bottom:24px;
-  max-width:100%;
-}
-.cert-preview img{
-  max-width:100%;max-height:420px;border-radius:8px;
-  display:block;cursor:pointer;
-  transition:transform 0.3s ease;
-}
-.cert-preview img:hover{transform:scale(1.02)}
-.btn-download{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:14px 48px;font-size:15px;font-weight:700;
-  color:var(--bg-deep);
-  background:linear-gradient(135deg,var(--success),#00c96e);
-  border:none;border-radius:50px;cursor:pointer;
-  letter-spacing:2px;text-decoration:none;
-  transition:all 0.3s ease;
-  box-shadow:0 4px 20px rgba(0,230,138,0.2);
-}
-.btn-download:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,230,138,0.3)}
-.download-hint{margin-top:12px;font-size:12px;color:var(--text-muted)}
-.error-area{margin-top:32px;display:none}
-.error-area.show{display:block;animation:fadeUp 0.5s ease both}
-.error-card{
-  background:rgba(255,77,106,0.06);
-  border:1px solid rgba(255,77,106,0.2);
-  border-left:3px solid var(--error);
-  border-radius:var(--radius);padding:24px;
-  display:flex;align-items:center;gap:14px;
-}
-.error-icon{font-size:28px;flex-shrink:0}
-.error-text{font-size:14px;color:var(--text-secondary);line-height:1.7}
-.error-text strong{color:var(--error)}
-.notice-section{margin-top:40px;animation:fadeUp 0.6s ease 0.35s both}
-.notice-card{
-  background:rgba(0,212,255,0.04);
-  border:1px solid rgba(0,212,255,0.15);
-  border-left:3px solid var(--accent);
-  border-radius:var(--radius);padding:24px;
-}
+.info-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:32px 0 48px}
+.info-card{background:var(--surface);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-align:center;position:relative;overflow:hidden;transition:all 0.3s ease;animation:fadeUp 0.5s ease both}
+.info-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity 0.3s ease}
+.info-card:hover{border-color:var(--border-strong);transform:translateY(-2px)}
+.info-card:hover::before{opacity:1}
+.info-card:nth-child(1){animation-delay:0.1s}
+.info-card:nth-child(2){animation-delay:0.2s}
+.info-card:nth-child(3){animation-delay:0.3s}
+.info-card:nth-child(4){animation-delay:0.4s}
+.info-card .ic-icon{font-size:26px;margin-bottom:6px;display:block}
+.info-card .ic-label{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;font-family:'JetBrains Mono',monospace;margin-bottom:4px}
+.info-card .ic-value{font-size:15px;font-weight:700;color:var(--text-primary)}
+.info-card .ic-value.accent{color:var(--accent)}
+.info-card .ic-value span{font-weight:400;font-size:12px;color:var(--text-secondary)}
+.countdown-bar{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:24px 0 0;animation:fadeDown 0.7s ease 0.3s both}
+.cd-item{text-align:center}
+.cd-item .num{font-family:'Orbitron',sans-serif;font-size:1.8rem;font-weight:900;color:var(--accent);line-height:1}
+.cd-item .label{font-size:11px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px}
+.step-card{background:var(--surface);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:var(--radius);padding:32px 28px;position:relative;overflow:hidden;transition:all 0.35s ease;animation:fadeUp 0.6s ease both}
+.step-card:nth-child(1){animation-delay:0.15s}
+.step-card:nth-child(2){animation-delay:0.25s}
+.step-card:hover{border-color:var(--border-strong);transform:translateY(-3px)}
+.step-card .step-badge{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:var(--accent);background:rgba(0,212,255,0.08);border:1px solid var(--border-strong);border-radius:6px;padding:4px 12px;display:inline-block;letter-spacing:2px;margin-bottom:16px}
+.step-card h3{font-size:1.15rem;font-weight:700;margin-bottom:10px;color:var(--text-primary)}
+.step-card p{font-size:14px;color:var(--text-secondary);line-height:1.8}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px;animation:fadeUp 0.6s ease 0.3s both}
+.btn-action{display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 24px;font-size:16px;font-weight:700;border:none;border-radius:14px;cursor:pointer;letter-spacing:2px;text-decoration:none;transition:all 0.35s ease;position:relative;overflow:hidden}
+.btn-action .arrow{font-size:20px;transition:transform 0.3s ease}
+.btn-action:hover .arrow{transform:translateX(6px)}
+.btn-register{color:var(--bg-deep);background:linear-gradient(135deg,var(--accent),var(--accent-secondary));box-shadow:0 4px 28px rgba(0,212,255,0.25)}
+.btn-register::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);transition:left 0.5s ease}
+.btn-register:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,212,255,0.35)}
+.btn-register:hover::before{left:100%}
+.btn-pay{color:var(--bg-deep);background:linear-gradient(135deg,var(--accent-gold),#f5d76e);box-shadow:0 4px 20px rgba(240,192,64,0.2)}
+.btn-pay:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(240,192,64,0.3)}
+.modal-overlay{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.75);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.show{display:flex;animation:fadeIn 0.3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal-box{background:linear-gradient(170deg,#0c1a2e 0%,#132744 100%);border:1px solid var(--border-strong);border-radius:20px;padding:40px 36px;max-width:420px;width:100%;text-align:center;position:relative;animation:scaleIn 0.35s ease;box-shadow:0 24px 80px rgba(0,0,0,0.5)}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.88)}to{opacity:1;transform:scale(1)}}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-gold),transparent)}
+.modal-close-x{position:absolute;top:16px;right:18px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--text-muted);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}
+.modal-close-x:hover{background:rgba(255,255,255,0.12);color:var(--text-primary);border-color:var(--border-strong)}
+.modal-title{font-size:1.25rem;font-weight:700;color:var(--text-primary);margin-bottom:6px;display:flex;align-items:center;justify-content:center;gap:8px}
+.modal-sub{font-size:13px;color:var(--text-secondary);margin-bottom:24px}
+.modal-qr-wrap{display:inline-block;padding:16px;background:rgba(255,255,255,0.04);border:2px dashed rgba(0,212,255,0.2);border-radius:16px;margin-bottom:20px}
+.modal-qr-wrap img{width:220px;height:220px;border-radius:10px;object-fit:cover;display:block}
+.modal-warn{background:rgba(255,77,106,0.08);border:1px solid rgba(255,77,106,0.25);border-radius:10px;padding:14px 18px;margin-bottom:24px;display:flex;align-items:flex-start;gap:10px;text-align:left}
+.modal-warn .warn-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.modal-warn .warn-text{font-size:13px;color:var(--text-secondary);line-height:1.7}
+.modal-warn .warn-text strong{color:#ff4d6a;font-weight:700}
+.btn-done{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;font-size:15px;font-weight:700;color:var(--text-primary);background:transparent;border:1px solid var(--border-strong);border-radius:50px;cursor:pointer;letter-spacing:2px;transition:all 0.3s ease}
+.btn-done:hover{background:rgba(0,212,255,0.08);border-color:var(--accent);color:var(--accent)}
+.success-modal .modal-box{border-color:rgba(0,230,138,0.3)}
+.success-modal .modal-box::before{background:linear-gradient(90deg,transparent,#00e68a,transparent)}
+.success-icon{font-size:56px;margin-bottom:16px}
+.success-title{font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:10px}
+.success-text{font-size:14px;color:var(--text-secondary);line-height:1.8;margin-bottom:28px}
+.success-text strong{color:#00e68a}
+.notice-card{background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.15);border-left:3px solid var(--accent);border-radius:var(--radius);padding:24px;animation:fadeUp 0.6s ease 0.4s both}
 .notice-card h3{font-size:1rem;font-weight:700;color:var(--accent);margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .notice-card ul{list-style:none;padding:0}
 .notice-card ul li{position:relative;padding-left:20px;margin-bottom:8px;font-size:14px;color:var(--text-secondary);line-height:1.7}
-.notice-card ul li::before{content:'›';position:absolute;left:0;color:var(--accent);font-weight:700}
+.notice-card ul li::before{content:'\203A';position:absolute;left:0;color:var(--accent);font-weight:700}
 .notice-card ul li strong{color:var(--text-primary)}
-.contact-section{margin-top:40px;animation:fadeUp 0.6s ease 0.4s both}
+.contact-section{margin-top:40px;animation:fadeUp 0.6s ease 0.45s both}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.contact-item{
-  background:var(--surface);backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:var(--radius);
-  padding:22px;display:flex;flex-direction:column;gap:6px;transition:all 0.3s ease;
-}
+.contact-item{background:var(--surface);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:6px;transition:all 0.3s ease}
 .contact-item:hover{border-color:var(--border-strong);transform:translateY(-2px)}
 .contact-item .dept{font-size:12px;color:var(--accent);font-weight:600;letter-spacing:1px}
 .contact-item .name{font-size:15px;font-weight:700;color:var(--text-primary)}
@@ -228,195 +103,147 @@ body::after{
 .footer{text-align:center;padding:48px 0 24px;border-top:1px solid var(--border);margin-top:48px}
 .footer p{font-size:13px;color:var(--text-muted);line-height:2}
 .footer .doc-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted);letter-spacing:1px;margin-top:4px}
-.toast{
-  position:fixed;top:24px;left:50%;transform:translateX(-50%) translateY(-100px);
-  padding:14px 28px;border-radius:10px;font-size:14px;font-weight:600;
-  z-index:2000;transition:transform 0.4s ease;pointer-events:none;
-}
-.toast.show{transform:translateX(-50%) translateY(0)}
-.toast.error{background:#2e0a14;border:1px solid var(--error);color:var(--error)}
-@media(max-width:640px){
-  .container{padding:20px 16px 60px}
-  .hero{padding:40px 0 24px}
-  .search-card{padding:24px 18px}
-  .cert-preview img{max-height:300px}
-  .contact-grid{grid-template-columns:1fr}
-}
+@media(max-width:640px){.container{padding:20px 16px 60px}.hero{padding:40px 0 12px}.info-bar{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.btn-row{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.countdown-bar{gap:16px}.cd-item .num{font-size:1.4rem}.modal-box{padding:28px 20px}.modal-qr-wrap img{width:180px;height:180px}}
 </style>
 </head>
 <body>
 <div class="grid-bg"></div>
 <div class="scanlines"></div>
-
 <div class="container">
 
-  <header class="hero">
-    <div class="badge"><span class="dot"></span> CERTIFICATE</div>
-    <h1>获奖证书查询下载</h1>
-    <p class="subtitle">输入姓名与身份证号，查询并下载您的获奖证书</p>
-  </header>
+<header class="hero">
+<div class="badge"><span class="dot"></span> REGISTRATION OPEN</div>
+<h1>2026年度顺德区青少年科技实践活动 · 报名入口</h1>
+<p class="subtitle">填写报名表 → 完成缴费 → 即报名成功</p>
+<div class="countdown-bar">
+<div class="cd-item"><div class="num" id="cd-day">--</div><div class="label">天</div></div>
+<div class="cd-item"><div class="num" id="cd-hour">--</div><div class="label">时</div></div>
+<div class="cd-item"><div class="num" id="cd-min">--</div><div class="label">分</div></div>
+<div class="cd-item"><div class="num" id="cd-sec">--</div><div class="label">秒</div></div>
+</div>
+</header>
 
-  <div class="search-card">
-    <h2>🔍 证书查询</h2>
-    <div class="field">
-      <label>选手姓名 <span class="required">*</span></label>
-      <input type="text" id="inputName" placeholder="请输入报名时填写的姓名">
-    </div>
-    <div class="field">
-      <label>身份证号 <span class="required">*</span></label>
-      <input type="text" id="inputId" placeholder="请输入18位身份证号码" maxlength="18">
-    </div>
-    <button class="btn-search" id="btnSearch" onclick="doSearch()">
-      <span id="btnText">查 询 证 书</span>
-    </button>
-  </div>
+<div class="info-bar">
+<div class="info-card">
+<span class="ic-icon">📅</span>
+<div class="ic-label">Date</div>
+<div class="ic-value">2026年8月29日<br><span>星期六 · 8:30—16:00</span></div>
+</div>
+<div class="info-card">
+<span class="ic-icon">📍</span>
+<div class="ic-label">Venue</div>
+<div class="ic-value accent">佛山顺德文德学校</div>
+</div>
+<div class="info-card">
+<span class="ic-icon">👥</span>
+<div class="ic-label">Age</div>
+<div class="ic-value">4 — 18 岁<br><span>学前至高中/中职</span></div>
+</div>
+<div class="info-card">
+<span class="ic-icon">🏆</span>
+<div class="ic-label">Awards</div>
+<div class="ic-value">双证颁发<br><span>综合能力+社会实践</span></div>
+</div>
+</div>
 
-  <div class="result-area" id="resultArea">
-    <div class="result-card">
-      <div class="result-name" id="resultName"></div>
-      <div class="result-info" id="resultInfo"></div>
-      <div class="cert-preview">
-        <img id="certImg" src="" alt="获奖证书">
-      </div>
-      <a id="btnDownload" href="" download="" class="btn-download">⬇ 下载证书</a>
-      <div class="download-hint">长按或右键可保存图片</div>
-    </div>
-  </div>
+<div class="steps">
+<div class="step-card">
+<div class="step-badge">STEP 01</div>
+<h3>📝 填写报名表</h3>
+<p>点击下方按钮，在线填写选手信息、参赛项目及指导老师信息，提交即可。</p>
+</div>
+<div class="step-card">
+<div class="step-badge">STEP 02</div>
+<h3>💳 完成缴费</h3>
+<p>提交报名表后，点击缴费按钮扫码支付，付款时<strong style="color:var(--accent)">务必备注选手姓名</strong>。</p>
+</div>
+</div>
 
-  <div class="error-area" id="errorArea">
-    <div class="error-card">
-      <span class="error-icon">❌</span>
-      <div class="error-text" id="errorText">
-        <strong>未查询到证书</strong><br>
-        请核实姓名和身份证号是否与报名时填写的一致。
-      </div>
-    </div>
-  </div>
+<div class="btn-row">
+<a href="https://my.feishu.cn/share/base/form/shrcnf07YkkYrdCTbFgjPIw3XXb" target="_blank" rel="noopener" class="btn-action btn-register">
+<span>📝 填写报名表</span>
+<span class="arrow">→</span>
+</a>
+<button class="btn-action btn-pay" onclick="openPayModal()">
+<span>💳 报名缴费</span>
+<span class="arrow">→</span>
+</button>
+</div>
 
-  <div class="notice-section">
-    <div class="notice-card">
-      <h3>📋 查询说明</h3>
-      <ul>
-        <li>请使用<strong>报名时填写的真实姓名</strong>和<strong>身份证号</strong>进行查询</li>
-        <li>证书以 PNG 图片格式提供，支持在线预览和下载</li>
-        <li>如查询不到证书，请确认是否已完成报名和缴费</li>
-        <li>如有疑问，请联系下方工作人员</li>
-      </ul>
-    </div>
-  </div>
+<div class="notice-card">
+<h3>⚠️ 参赛须知</h3>
+<ul>
+<li>所有选手本人<strong>仅能参与所在学段的组别活动</strong>，不允许跨组别参加</li>
+<li>编程类选手须<strong>自带电脑和电源排插</strong>，预装好所需软件及插件</li>
+<li>编程类可自主选报 <strong>1 — 2 个</strong>组别</li>
+<li>报名以<strong>缴费成功</strong>为准，请及时完成支付</li>
+<li>各项赛事详细规则请参见正式附件</li>
+</ul>
+</div>
 
-  <div class="contact-section">
-    <div class="contact-grid">
-      <div class="contact-item">
-        <div class="dept">项目发展部</div>
-        <div class="name">梁老师</div>
-        <div class="phone">📞 <a href="tel:13902564933">139 0256 4933</a></div>
-        <div style="font-size:12px;color:var(--text-muted)">微信同号</div>
-      </div>
-      <div class="contact-item">
-        <div class="dept">科技创新服务部</div>
-        <div class="name">罗老师</div>
-        <div class="phone">📞 <a href="tel:13670201256">136 7020 1256</a></div>
-        <div style="font-size:12px;color:var(--text-muted)">微信同号</div>
-      </div>
-    </div>
-  </div>
+<div class="contact-section">
+<div class="contact-grid">
+<div class="contact-item" style="max-width:360px;margin:0 auto">
+<div class="name" style="font-size:16px">赛老师</div>
+<div class="phone">📞 <a href="tel:18566096939">185 6609 6939</a></div>
+<div style="font-size:12px;color:var(--text-muted)">同微</div>
+</div>
+</div>
+</div>
 
-  <footer class="footer">
-    <p>佛山市顺德区青少年成长促进会</p>
-    <p class="doc-num">区青促(2026)16号 · 2026年7月18日印发</p>
-  </footer>
+<footer class="footer">
+<p>佛山市顺德区青少年成长促进会</p>
+<p class="doc-num">区青促(2026)16号 · 2026年7月18日印发</p>
+</footer>
 
 </div>
 
-<div class="toast" id="toast"></div>
+<div class="modal-overlay" id="payModal">
+<div class="modal-box">
+<button class="modal-close-x" onclick="closePayModal()">&times;</button>
+<div class="modal-title">💳 扫码完成缴费</div>
+<div class="modal-sub">请使用微信扫描下方二维码付款</div>
+<div class="modal-qr-wrap">
+<img src="https://dz-933.github.io/dz/qr.jpg" alt="微信收款二维码">
+</div>
+<div class="modal-warn">
+<span class="warn-icon">⚠️</span>
+<div class="warn-text">付款时请务必在<strong>备注/留言中填写选手姓名</strong>，否则无法核对报名信息，后果自负。</div>
+</div>
+<button class="btn-done" onclick="confirmPay()">✅ 我已支付</button>
+</div>
+</div>
+
+<div class="modal-overlay success-modal" id="doneModal">
+<div class="modal-box">
+<button class="modal-close-x" onclick="closeDoneModal()">&times;</button>
+<div class="success-icon">✅</div>
+<div class="success-title">感谢您的缴费</div>
+<div class="success-text">工作人员将在<strong>24小时内</strong>核对您的缴费状态，<br>并在报名表中更新为<strong>「已缴费」</strong>。<br><br>请保留支付截图以备查询。</div>
+<button class="btn-done" onclick="closeDoneModal()">我知道了</button>
+</div>
+</div>
 
 <script>
-// =============================================
-// 路径已匹配你的仓库结构（文件都在根目录）
-// =============================================
-var BASE_URL = 'https://dz-933.github.io/dz';
-var JSON_FILE = BASE_URL + '/zhengshuming.json';
-var IMG_DIR = BASE_URL + '/';
-
-var certsData = null;
-
-window.addEventListener('DOMContentLoaded', function(){
-  fetch(JSON_FILE)
-    .then(function(res){
-      if(!res.ok) throw new Error('加载失败');
-      return res.json();
-    })
-    .then(function(data){
-      certsData = data;
-    })
-    .catch(function(){
-      certsData = [];
-      console.warn('证书数据加载失败，请检查 zhengshuming.json 文件是否存在');
-    });
-});
-
-function showToast(msg){
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast error show';
-  setTimeout(function(){ t.classList.remove('show'); }, 3000);
+(function(){
+var target = new Date('2026-08-29T08:30:00+08:00').getTime();
+function update(){
+var diff = target - Date.now();
+if(diff <= 0){document.getElementById('cd-day').textContent='00';document.getElementById('cd-hour').textContent='00';document.getElementById('cd-min').textContent='00';document.getElementById('cd-sec').textContent='00';return;}
+var d=Math.floor(diff/86400000);var h=Math.floor((diff%86400000)/3600000);var m=Math.floor((diff%3600000)/60000);var s=Math.floor((diff%60000)/1000);
+document.getElementById('cd-day').textContent=String(d).padStart(2,'0');
+document.getElementById('cd-hour').textContent=String(h).padStart(2,'0');
+document.getElementById('cd-min').textContent=String(m).padStart(2,'0');
+document.getElementById('cd-sec').textContent=String(s).padStart(2,'0');
 }
-
-function doSearch(){
-  var name = document.getElementById('inputName').value.trim();
-  var id = document.getElementById('inputId').value.trim();
-
-  document.getElementById('resultArea').classList.remove('show');
-  document.getElementById('errorArea').classList.remove('show');
-
-  if(!name){ showToast('请输入选手姓名'); return; }
-  if(!id){ showToast('请输入身份证号'); return; }
-  if(!/^\d{17}[\dXx]$/.test(id)){ showToast('请输入正确的18位身份证号码'); return; }
-
-  var btn = document.getElementById('btnSearch');
-  var btnText = document.getElementById('btnText');
-  btn.disabled = true;
-  btnText.innerHTML = '<span class="loading-spinner"></span> 查询中...';
-
-  if(!certsData){
-    setTimeout(function(){
-      btn.disabled = false;
-      btnText.textContent = '查 询 证 书';
-      showToast('证书数据加载中，请稍后再试');
-    }, 1000);
-    return;
-  }
-
-  setTimeout(function(){
-    var found = null;
-    for(var i = 0; i < certsData.length; i++){
-      if(certsData[i].name === name && certsData[i].id.toUpperCase() === id.toUpperCase()){
-        found = certsData[i];
-        break;
-      }
-    }
-
-    btn.disabled = false;
-    btnText.textContent = '查 询 证 书';
-
-    if(found){
-      var imgUrl = IMG_DIR + found.file;
-      document.getElementById('resultName').textContent = found.name + ' 的获奖证书';
-      document.getElementById('resultInfo').textContent = '身份证号：' + found.id.replace(/^(.{6})(.+)(.{4})$/, '$1********$3');
-      document.getElementById('certImg').src = imgUrl;
-      document.getElementById('btnDownload').href = imgUrl;
-      document.getElementById('btnDownload').download = found.name + '_获奖证书.png';
-      document.getElementById('resultArea').classList.add('show');
-    } else {
-      document.getElementById('errorArea').classList.add('show');
-    }
-  }, 800);
-}
-
-document.addEventListener('keydown', function(e){
-  if(e.key === 'Enter') doSearch();
-});
+update();setInterval(update,1000);
+})();
+function openPayModal(){document.getElementById('payModal').classList.add('show');document.body.style.overflow='hidden';}
+function closePayModal(){document.getElementById('payModal').classList.remove('show');document.body.style.overflow='';}
+document.getElementById('payModal').addEventListener('click',function(e){if(e.target===this)closePayModal();});
+function confirmPay(){closePayModal();setTimeout(function(){document.getElementById('doneModal').classList.add('show');document.body.style.overflow='hidden';},300);}
+function closeDoneModal(){document.getElementById('doneModal').classList.remove('show');document.body.style.overflow='';}
+document.getElementById('doneModal').addEventListener('click',function(e){if(e.target===this)closeDoneModal();});
 </script>
 </body>
 </html>
